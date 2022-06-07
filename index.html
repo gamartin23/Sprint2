@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruparty - Calculadora de gastos grupales</title>
+    <link rel="stylesheet" href="style.css">
+    <div id="bg"><img src="img/logo.png" id="logo">
+    <div id="subtitulo">Calculadora de gastos grupales</div></div>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div class="inputNombre">
+                    <input type="text" id="fieldNombre" placeholder="Nombre">
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div class="inputMonto">
+                    <input type="number" id="fieldMonto" placeholder="Monto">
+                </div>
+                <br>
+                <div>
+                    <button type="button" class="btn btn-outline-success" value="Submit" onclick="getmonto()">Calcular!</button>
+                    <button type="button" class="btn btn-outline-danger" value="Submit" onclick="refrescar()">Reiniciar</button>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    Total: <p id="total"></p>
+                    Cada uno debe pagar: <p id="promedio"></p>
+                </div>
+                <br>
+                </div>
+                <br>
+            </div>
+            <div class="col"></div>
+        </div>
+        <br>
+        <br>
+                <div class="lista">
+                <ul id="lista" class="list-group"></ul></div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>
